@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+html{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 2rem;
+    line-height: 1.35;
+    color: #000;
+}
+table{
+    border-collapse: collapse;
+}
+table th{
+    font-weight: normal;
+}
+caption, legend{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul, ol{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+select, input, fieldset{
+    vertical-align: top;
+}
+button{
+    cursor: pointer;
+}

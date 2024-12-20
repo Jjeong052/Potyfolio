@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+
+/*animation*/
+@keyframes fadeUp{
+    0%{
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+@keyframes fadeRight{
+    0%{
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+@keyframes fadeLeft{
+    0%{
+      transform: translateX(30px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+@keyframes scale{
+    0%{
+      transform: scale(0.7);
+      opacity: 0;
+    }
+    100%{
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+@keyframes fadeOn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes skills95{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes skills90{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes skills80{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes skills60{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes blink {
+    0%  {opacity:0;}
+    100%  {opacity:1;}
+  }
