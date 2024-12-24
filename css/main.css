@@ -18,8 +18,8 @@
 #cover-1 h1{
     font-weight: normal;
     position: absolute;
-    top: 260px;
-    left: 900px;
+    top: 28%;
+    left: 46%;
     font-size: 40px;
 }
 #cover-1.active h1{
@@ -103,6 +103,7 @@
     background-color: #fffcf5;
 }
 #profile-1 h2{
+    width: 100%;
     height: 82px;
     font-size: 5rem;
     text-align: center;
@@ -129,7 +130,7 @@
 }
 #profile-1 h4:nth-of-type(2){
     position: absolute;
-    right: -80px;
+    right: -4%;
     top: 80px;
     transform: translate(-50%,-50%);
     font-size: 2rem;
@@ -365,6 +366,9 @@
 #webdesign-2 .webd1-img > img{
     height: 100vh;
 }
+#webdesign-2 .web-detail{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
 #webdesign-2.active .web-detail{
     animation: fadeLeft 1s 0.5s backwards;
 }
@@ -412,8 +416,8 @@
 }
 #webdesign-2 .web-detail{
     position: absolute;
-    top: 150px;
-    right: 340px;
+    top: 20%;
+    right: 17%;
 }
 #webdesign-2 .web-detail a{
     color: #fff;
@@ -508,6 +512,7 @@
     position: absolute;
     top: 150px;
     right: 320px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 #uxui-1.active .web-detail{
     animation: fadeLeft 1s 0.5s backwards;
@@ -521,6 +526,7 @@
 #uxui-1 .web-all {
     width: auto;
     display: block;
+    
 }
 #uxui-1 .title{
     margin: 0;
@@ -638,7 +644,7 @@ video{
 }
 #grapic-1 h4:nth-of-type(1){
     position: absolute;
-    left: 163px;
+    left: 100px;
     top: 80px;
     transform: translate(-50%,-50%);
     font-size: 2rem;
@@ -662,20 +668,20 @@ video{
 #grapic-1 p:nth-of-type(3){
     height: 130px;
 }
-#grapic-1 .cardnews-img{
+#grapic-1 .popup-img{
     display: flex;
     gap: 30px;
     padding-top: 30px;
 }
-#grapic-1 .cardnews-img > img{
+#grapic-1 .popup-img > img{
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
-#grapic-1.active .cardnews-img > img{
+#grapic-1.active .popup-img > img{
     animation: fadeUp 1s 0.5s backwards;
 }
-#grapic-1.active .cardnews-img > img:nth-of-type(2){
+#grapic-1.active .popup-img > img:nth-of-type(2){
     animation: fadeUp 2s 0.5s backwards;
 }
 #grapic-1 .web-detail{
@@ -754,6 +760,16 @@ video{
 #cafe24-1 button:hover a{
     color: #fff;
 }
+#cafe24-1 .web-detail .txt-box{
+    padding: 20px;
+    z-index: 999;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    /* background-color: rgba(255,255,255,0.5); */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
 
 /*contact*/
 #contact-1{
@@ -816,4 +832,182 @@ video{
     width:2px;
     height:60px;
     animation:blink infinite 1s ease;
+}
+
+
+
+
+
+
+/*******************************태블릿*****************************/
+
+@media screen and (max-width : 1200px) {
+
+    body{
+        font-size: 1.8rem;
+    }
+
+
+    #cover-1 h1{
+        width: 490px;
+    }
+
+
+    #profile-1 .profile-detail{
+        gap: 30px;
+    }
+    #profile-1 .profile_box{
+        gap: 40px;
+    }
+    #profile-1 .profile-detail .skills-box{
+        display: block;
+    }
+    #profile-1 .profile-detail .profile-img{
+        width: 30%;
+        text-align: center;
+        padding: 0 30px;
+    }
+    #profile-1 .profile-detail .name span{
+        font-size: 2.5rem;
+    }
+    #profile-1 .profile-detail strong{
+        font-size: 2.5rem;
+    }
+    #profile-1 .profile-detail h5{
+        font-size: 2.5rem;
+    }
+    #profile-1 .h-box{
+        width: 90%;
+    }
+
+
+    #webdesign-1{
+        padding: 0 100px;
+    }
+    #webdesign-1.active .webd1-img > img {
+        height: 80vh;
+    }
+    #webdesign-1 .txt-box h3 img{
+        width: 350px;
+    }
+    .web-detail p:nth-of-type(2) {
+        font-size: 3rem;
+    }
+    .web-detail button{
+        width: 220px;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .title{
+        margin-bottom: 40px;
+    }
+
+
+
+    #webdesign-2{
+        padding: 0 100px;
+    }
+    #webdesign-2.active .webd1-img > img {
+        height: 80vh;
+    }
+    #webdesign-2 .txt-box h3 img{
+        width: 350px;
+    }
+    #webdesign-2 .web-detail{
+        top: 20%;
+        left: 10%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    #webdesign-2 .title{
+        top: 5%;
+        left: 10%;
+    }
+    #webdesign-2 .web-detail h3{
+        font-size: 7.5rem;
+    }
+
+    
+
+    #webdesign-3{
+        padding: 0 100px;
+    }
+    #webdesign-3.active .webd1-img > img {
+        height: 80vh;
+    }
+    #webdesign-3 .txt-box h3 img{
+        width: 350px;
+    }
+    #webdesign-3 .web-detail{
+        top: 20%;
+        left: 10%;
+    }
+    #webdesign-3 .title{
+        top: 5%;
+        left: 10%;
+    }
+    #webdesign-3 .web-detail h3{
+        font-size: 7.5rem;
+    }
+
+
+
+
+    #uxui-1{
+        padding: 0 100px;
+    }
+    #uxui-1.active .webd1-img > img {
+        height: 80vh;
+    }
+    #uxui-1 .txt-box h3 img{
+        width: 350px;
+    }
+    #uxui-1 .web-detail{
+        top: 20%;
+        left: 10%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    #uxui-1 .title{
+        top: 5%;
+        left: 16%;
+        padding-top: 20px;
+    }
+
+
+
+    #video-1{
+        padding: 0 100px;
+    }
+
+
+    #grapic-1{
+        padding: 0 100px;
+    }
+    #grapic-1 .popup-img > img{
+        height: 40vh;
+    }
+    #grapic-1 .web-detail{
+        gap: 0;
+    }
+
+
+    #cafe24-1 .web-detail .txt-box{
+        padding: 20px;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        z-index: 999;
+        background-color: rgba(255,255,255,0.5);
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    #contact-1 .last{
+        font-size: 5rem;
+    }
+    #contact-1 .contact-box{
+        font-size: 1.7rem;
+    }
+    #contact-1 .cont-name, #contact-1 .contact-box h6{
+        font-size: 2.2rem;
+    }
+
 }
